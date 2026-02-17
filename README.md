@@ -24,16 +24,3 @@ The processor supports a comprehensive subset of the MIPS32 instruction set:
 * **R-Type:** `add`, `sub`, `and`, `or`, `nand`, `nor`, `sll`, `srl`, `sra`, `rol`, `ror`
 * **I-Type:** `addi`, `li`, `lui`, `ori`, `lb`, `sb`, `lw`, `sw`
 * **Branch/Jump:** `beq`, `bne`, `b` (unconditional branch)
-
-## Directory Structure
-
-.
-├── sources/
-│   ├── multicycle/       # VHDL sources for the FSM-based implementation
-│   └── pipeline/         # VHDL sources for the 5-stage pipeline implementation
-├── tb/                   # Testbenches and verification files
-│   ├── *.vhd             # Testbench entities (proc_test, pipeline_test)
-│   ├── *.txt             # Assembly test vectors used for verification
-│   ├── *.data            # Compiled machine code (hex) for RAM initialization
-│   └── *.wcfg            # Waveform configuration files for Xilinx ISim
-└── README.md
